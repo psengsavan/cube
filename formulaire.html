@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Formulaire</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="formulaire.html">Inscription</a></li>
+                <li><a href="list.html">Recette</a></li>
+                <li><a href="users.html">Utilisateurs</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <h1>Inscrivez-vous</h1>
+    <form action="page.html"> <!--l'attribut action envoie les données vers une autre page-->
+        <div>
+            <label for="surname">Nom :</label>
+            <input type="text" name="surname" id="surname" placeholder="Ex : Dupont"/>
+        </div>
+        <div>
+            <label for="first name">Prénom :</label>
+            <input type="text" name="first name" id="first name" />
+        </div>
+        <div>
+            <label for="age">Âge :</label>
+            <input type="number" min="0" max="" name="age" id="age" />
+        </div>
+        <div>
+            <label for="email">E-mail :</label>
+            <input type="email" name="email" id="email"/>
+        </div>
+        <div>
+            <label for="date of birth">Date de naissance :</label>
+            <input type="date" name="date of birth" id="date of birth" />
+        </div>
+        <div>
+            <p>Genre :</p>
+            <input type="radio" name="genre" value="femme" id="woman"/>
+            <label for="woman">Femme</label>
+            <br/>
+            <input type="radio" name="genre" value="homme" id="man"/>
+            <label for="man">Femme</label>
+            
+        </div>
+        <div>
+            <input type="submit" value="Envoyer"/>
+        </div>
+    </form>
+</body>
+</html>

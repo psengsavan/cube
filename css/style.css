@@ -1,0 +1,54 @@
+/*********************
+*   Principaux sélecteurs :
+*
+*   tag {}
+*   .class {}
+*   #id {}
+*
+**********************/
+
+* {
+    padding: 0%;
+    margin:0%;
+          
+}
+
+/*View Hight -> vh représente la hauteur de l'écran
+View Width -> vw */
+body {
+    height: 100vh;
+}
+header {
+    height: 8%;
+    display: flex;
+    background-color: salmon;
+}
+
+nav {
+    width: 100%;
+}
+       
+nav > ul {    /* tous les descandants direct <ul> dans une <nav>*/
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 4px 7px;
+    border-radius: 2px;
+    background-color: blanchedalmond;
+}
+nav a:hover {
+    color: black;
+    background-color: darksalmon;
+}
+
+nav li {
+    display: flex;
+    align-items: center;
+}

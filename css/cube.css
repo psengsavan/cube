@@ -1,0 +1,72 @@
+* {
+    padding: 0%;
+    margin:0%; 
+}
+
+body {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.flex{
+    display: flex;
+}
+
+#cube {
+    width: 600px;
+    height: 600px;
+    border: solid;
+}
+
+.left, .right {
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+}
+.topLeft {
+    background-color: red;
+    width: 100%;    /* La plupart des width: 100% peuvent être supprimées */
+    height: 50%;
+}
+.bottomLeft{
+    height: 50%;
+    flex-wrap: wrap;
+}
+.bottomLeft > div {
+    width: 50%;
+    height: 50%;
+}
+
+.right > div {
+    height: 33.33%;
+}
+
+.topRight > div {
+   width: 50%;
+}
+
+.two {
+    background-color: pink;
+    /* box-sizing: border-box;  */
+}
+.three {
+    background-color: salmon;
+}
+.four {
+    background-color: rgb(158, 83, 123);
+}
+.five {
+    background-color: purple;
+}
+.six{
+    background-color: rgba(235, 92, 26, 0.876);
+}
+.seven{
+    background-color: wheat;
+}
+.eight {
+    background-color: orange;
+}
+.nine{
+    background-color: sandybrown;
+}
